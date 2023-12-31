@@ -56,7 +56,6 @@ this.Arrow2 = document.querySelector('.Arrow-left');
 this.Arrow2.addEventListener('click', () => {
 this.Button2.classList.remove('Disabled');
 this.repeatCreateBlockDark2.classList.add('T3');
-this.repeatCreateBlockDark2.classList.remove('T');
 this.Button1.disabled = '';
 
 
