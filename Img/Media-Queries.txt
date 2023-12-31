@@ -1,0 +1,10 @@
+Media Queries
+Resuloções
+/*
+480
+768
+1024
+1366
+*/
+
+Geralmente as resoluções dos aplicativos são assim
