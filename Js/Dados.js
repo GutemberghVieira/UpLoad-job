@@ -1,8 +1,13 @@
+
+(() => {
+
 function Buttons(){
-this.Button1       = document.querySelector('.Fire-button');
-this.Button2       = document.querySelector('.Fire-2-button');
-this.ProgressDaddy = document.querySelector('.progress-bar');
-this.remove        = document.querySelectorAll('.Remove');
+this.Button1         = document.querySelector('.Fire-button');
+this.Button2         = document.querySelector('.Fire-2-button');
+this.ProgressDaddy   = document.querySelector('.progress-bar');
+this.wrapNavigations = document.querySelector('.wrap-Navigations');
+this.AboutMeGroup    = document.querySelector('.About-me-Group');
+this.remove          = document.querySelectorAll('.Remove');
 }
 
 Buttons.prototype.MapButton = function(){
@@ -13,6 +18,7 @@ this.Animation = document.querySelector('.img-new-design');
 
 this.Animation.classList.add('Animation');
 this.Animation.classList.add('AnimationSlowDown');
+
 
 this.CreateBlockDark = document.querySelector('.Fire');
 this.CreateBlockDark.classList.add('T1');
@@ -44,7 +50,11 @@ this.repeatCreateBlockDark2.classList.add('T');
 this.repeatCreateBlockDark2.classList.remove('T3');
 this.Button2.classList.add('Disabled');
 this.Button1.disabled = 'disabled';
+
 this.ProgressDaddy.classList.add('Progress-Animation');
+this.wrapNavigations.classList.add('Progress-Animation');
+this.AboutMeGroup.classList.add('Progress-Animation');
+
 
 })
 
@@ -59,7 +69,9 @@ this.repeatCreateBlockDark2.classList.add('T3');
 this.repeatCreateBlockDark2.classList.remove('T');
 this.Button1.disabled = '';
 
-
+this.ProgressDaddy.classList.remove('Progress-Animation');
+this.wrapNavigations.classList.remove('Progress-Animation');
+this.AboutMeGroup.classList.remove('Progress-Animation');
 });
 
 
@@ -81,3 +93,4 @@ AnimationButton.ArrowLeft();
 
 AnimationButton.Remove();
 
+})();
